@@ -1,0 +1,11 @@
+<form action="/bands/delete" method="post">
+  <select id="band-delete-dropdown" name="band-delete-dropdown">
+        @foreach(var thisBand in Model)
+        {
+          <option value="@thisBand.GetId()">@thisBand.GetName()</option>
+        }
+  </select>
+  <button type="submit">Delete Band</button>
+</form>
+
+<h4><a href="/">Return home</a></h4>

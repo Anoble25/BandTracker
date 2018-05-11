@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using UniversityRegistrar.Models;
+using BandTracker.Models;
 using System.Collections.Generic;
 
 namespace BandTracker.Controllers

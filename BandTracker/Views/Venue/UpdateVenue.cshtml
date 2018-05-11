@@ -1,0 +1,15 @@
+<form action="/venues/update" method="post">
+  <select id="venue-update-dropdown" name="venue-update-dropdown">
+        @foreach(var thisVenue in Model)
+        {
+          <option value="@thisVenue.GetId()">@thisVenue.GetName()</option>
+        }
+  </select>
+
+  <label for="new-venue-name">Enter New Venue name:</label>
+  <input id="new-venue-name" name="new-venue-name" type="text">
+
+  <button type="submit">Update Venue Name</button>
+</form>
+
+<h4><a href="/">Return home</a></h4>

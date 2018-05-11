@@ -1,0 +1,15 @@
+<form action="/bands/update" method="post">
+  <select id="band-update-dropdown" name="band-update-dropdown">
+        @foreach(var thisBand in Model)
+        {
+          <option value="@thisBand.GetId()">@thisBand.GetName()</option>
+        }
+  </select>
+
+  <label for="new-band-name">Enter New Band name:</label>
+  <input id="new-band-name" name="new-band-name" type="text">
+
+  <button type="submit">Update Band Name</button>
+</form>
+
+<h4><a href="/">Return home</a></h4>
